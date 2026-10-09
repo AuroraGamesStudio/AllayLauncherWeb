@@ -149,11 +149,11 @@
     </div>
     <div class="field">
       <label for="regPass"><i class="ti ti-lock"></i>密码</label>
-      <input id="regPass" type="password" required minlength="6" placeholder="至少 6 位">
+      <input id="regPass" type="password" required minlength="6" autocomplete="new-password" placeholder="至少 6 位">
     </div>
     <div class="field">
       <label for="regPass2"><i class="ti ti-lock"></i>确认密码</label>
-      <input id="regPass2" type="password" required placeholder="再次输入密码">
+      <input id="regPass2" type="password" required autocomplete="new-password" placeholder="再次输入密码">
     </div>
     <div class="error-msg" id="errMsg"></div>
     <button class="btn" type="submit" id="submitBtn"><i class="ti ti-user-plus"></i>注册</button>
@@ -164,7 +164,7 @@
 </div>
 
 <script>
-const API = 'https://allay.1636647891.workers.dev';
+const API = 'https://api.allay.cc.cd';
 
 async function handleReg(e) {
   e.preventDefault();
